@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 int n;
 int cache[101][10];
@@ -8,12 +7,9 @@ int dp(int i,int j) {
 	int &ret = cache[i][j];
 	if (i == n) return 1;
 	if (ret != 0) return ret;
-
 	return ret = (dp(i + 1, j - 1) + dp(i + 1, j + 1)) % 1000000000;
 }
-
 int main() {
-	freopen("input.txt", "r", stdin);
 	cin >> n;
 	int result = 0;
 	for (int i = 1; i <= 9; i++) {

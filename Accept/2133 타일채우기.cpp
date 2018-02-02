@@ -5,7 +5,6 @@
 int n;
 int d[50];
 int main() {
-	//freopen("input.txt", "r", stdin);
 	cin >> n;
 	d[0] = 1;
 	d[2] = 3;

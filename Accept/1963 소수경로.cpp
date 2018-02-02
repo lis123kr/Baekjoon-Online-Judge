@@ -26,7 +26,6 @@ vector < pair<int, int> > CheckNeighbor(const vector<int> &pri, pair<int,int> cm
 }
 
 int main() {
-	freopen("input.txt", "r", stdin);
 	int t, idx=0;
 	scanf("%d", &t);
 	vector<int>pri;
